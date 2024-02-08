@@ -3,6 +3,7 @@ $os: 'Open Sans', sans-serif;
 $white: #fff;
 $black: #000;
 $gray: #e5e5e5;
+$tabs: #333;
 $text: 18px;
 $wrap: 1440px;
 $container: 1230px;
@@ -11,6 +12,7 @@ $yellow: #E8C300;
 $white-opacity: rgba(255, 255, 255, 0.5);
 $black-opacity: rgba(0, 0, 0, 0.5);
 $gray-opacity: rgba(51, 51, 51, 0.5);
+$tabs-opacity: rgba(51, 51, 51, 0.2);
 
 @mixin flex ( $jc, $ai ) {
     display: flex;
@@ -37,6 +39,8 @@ $gray-opacity: rgba(51, 51, 51, 0.5);
     border-radius: 5px;
     filter: drop-shadow(0px 0px 50px $black-opacity);
 }
+
+
 
 body {
     background: $white;
@@ -77,6 +81,7 @@ section h2 {
     font-size: 42px;
     font-family: $kurale;
     text-transform: uppercase;
+    text-align: center;
     &::after {
         @include line;
     }
