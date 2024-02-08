@@ -1,0 +1,69 @@
+.spec__container {
+    position: relative;
+    h6 {
+        text-align: center;
+        color: $white;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        top: 45px;
+    }
+}
+
+.spec__slide {
+    background: url(../img/spec-bg.jpg) center/cover no-repeat;
+    padding: 106px 0 95px;
+}
+
+.spec__slide-container {
+    @include flex (space-between, center);
+}
+
+.spec__text {
+    color: $white;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.spec__img {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    text-align: right;
+    .circle {
+        left: 0;
+        transform: translate(-40%, -50%);
+    }
+    img {
+        @include img;
+    }
+}
+
+.spec__pagination {
+    @include flex(center, center);
+    position: absolute;
+    width: 100%;
+    bottom: 45px;
+    z-index: 2;
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $white-opacity;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: 0.3s;
+      &:hover {
+        background: $white;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background: $white;
+    }
+  }
